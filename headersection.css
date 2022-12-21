@@ -1,0 +1,94 @@
+*{
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2{ /* Only for the topics of contents*/
+    font-family: Garamond;
+}
+body{ /* Decorate body texts */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin-top: 170px;
+}
+
+nav{ /* Header: Logo and navigation bar*/
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    background-color: #FFEFD2;
+    float: left;
+    font-size: large;
+    display: flex;
+}
+.navbar ul{ 
+    display: flex;
+    list-style: none;
+    margin-top: 35px;
+}
+.navbar :hover{ /* The texts will be changed into black when hover over the text */
+    color: black;
+}
+.navbar li, li a{
+    margin-right: 5px;
+    text-decoration: none;
+    font-family: Garamond; 
+}
+.active{ /* Display the blue color box over the name of current page*/
+    background-color: #1e1263;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+}
+footer { /* Style the whole footer part */
+    background-color: #ee470d;
+    text-align: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+footer a{ /* Decorate the text inside the box at footer of the page */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: medium;
+    font-family: Baskerville,Baskerville Old Face;
+}
+
+.searchbox{ /* Put the whole search box class into the center of the page */
+    float: right;
+    top: 20px;
+    right: 15px;
+    position: fixed;
+    border: 3 px solid rgb(243, 43, 76);
+}
+.searchbox input{ /* Style the input box of search bar */
+    box-sizing: border-box;
+    border: 1px solid rgb(36, 28, 28);
+    width: 600px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(93, 94, 94);
+}
+.searchbox [type=text] { /* Style the text inside the search bar */
+    padding: 7px;
+    font-size: 17px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.searchbox button{ /* Style the search button */
+    padding: 11px;
+    background: rgba(252, 214, 133, 0.932);
+    border: none;
+    cursor: pointer;
+}
+.searchbox button:hover{ /* Change the opacity of button on hover */
+    opacity: 0.4;
+}

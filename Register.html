@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="C:\Users\Windows10\Downloads\public\headersection.css"> <!-- External css for header section -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Search button -->
+        <link rel="icon" href="https://i.imgur.com/5eVtkqu.png"> <!-- Change the icon of the webpage -->
+        <style>
+            *{ /* Change the font of whole texts inside this page */
+                font-family: 'Poppins', sans-serif;
+            } 
+            .container{
+                margin: auto;
+                max-width: 700px;
+                width: 100%;
+                background: #fffaf0;
+                padding: 25px 30px;
+                border-radius: 5px;
+                margin-bottom: 70px;
+            }
+            .container .title{
+                font-size: 25px;
+                font-weight: 500;
+                position: relative;
+            }
+            .container form .user-details{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+            }
+            form .user-details .inputbox{
+                margin-bottom: 15px;
+                width: calc(100% /2 - 20px);
+            }
+            .user-details .inputbox details{
+                padding-left: 5px;
+                display: block;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .user-details .inputbox input{
+                height: 45px;
+                width: 100%;
+                outline: none;
+                border-radius: 5px;
+                border: 1px solid #808080;
+                font-size: 16px;
+                border-bottom-width: 2px;
+                padding-left: 10px;
+            }
+            .button {
+                margin: auto;
+                width: 200px;
+                height: 50px;
+                border-radius: 40px;
+                outline:none;
+                font-weight: 500;
+                font-size: 16px;
+                border:none;
+                background: #228b22;
+                color:#fff;
+                box-shadow: 8px 10px 30px rgba(0,0,0,0,2);
+                transition: 0.4s;
+            }
+            .button:hover{
+                background: #00bfff;
+                color: #fff;
+            }
+            .user-details .inputbox{
+                justify-content: center;
+            }
+            .inputboxad{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+            }
+            .inputboxad .details-ad input{
+                display: flex;
+                width: 250px;
+                margin: auto;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+        </style>
+        <title>Registration</title> 
+    </head>
+    <body style="background-color: #f8f8ff">
+        <nav class="navbar">
+            <img src="https://i.imgur.com/5eVtkqu.png" alt="logo" width="100" height="100"> 
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a class="active" href="/login">Log-in</a></li>
+                <li><a href="/category">Categories</a></li> 
+                <li><a href="/home/cart">Cart</a></li>
+                <li><a href="/search">Search</a></li>
+            </ul>
+        </nav>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <div class="inputbox">
+                        <span class="details">Last name</span>
+                        <input type="text" name ="lname" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">Username</span>
+                        <input type="text" name = "username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">Birth of date</span>
+                        <input type="date" name ="DOB"placeholder="Enter your age" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">Phone number</span>
+                        <input type="text" name="phone_num" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">E-mail</span>
+                        <input type="text" name="email" placeholder="Enter your e-mail" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">Password</span>
+                        <input type="text" name="psw" placeholder="Enter your password" required>
+                    </div>
+                    <div class="inputboxad">
+                        <span class="details">Address</span>
+                        <!-- <input type="text" placeholder="Enter your address" required> -->
+                        <div class="details-ad">
+                            <span class="details-details">details</span>
+                            <input type="text" name="details" placeholder="Enter your details" required>
+                            <span class="details-province">province</span>
+                            <input type="text" name="province" placeholder="Enter your province" required>
+                            <span class="details-zipcode">zip-code</span>
+                            <input type="number" name="zip_code" placeholder="Enter your zip-code" required>
+                        </div>
+                    </div>
+                    <input type="submit" class="button" value="Register">
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <footer>
+        <!-- Link to AboutUs.html-->
+        <a href="/aboutus">About Us</a>
+    </footer>
+</html>
+

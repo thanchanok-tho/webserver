@@ -1,0 +1,32 @@
+*{ /* Change the font of whole texts inside this page */
+    font-family: 'Poppins', sans-serif;
+} 
+.productrow{
+    display: grid;
+    grid-template-columns: repeat(auto-fill);
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-left: 300px;
+    margin-right: 300px; 
+}
+.productrow a{ /* Change the text in href style into normal text */
+    text-decoration: none;
+    color: #d7e2ae;
+    font-family: 'Poppins', sans-serif; 
+}
+#product{
+    width: 250px;
+    height: 260px;
+}
+#productname{
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px;
+}
+#price{
+    font-style: italic;
+} 
+.row{
+    color: black;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="C:\Users\Windows10\Downloads\public\headersection.css"> <!-- External css for header section -->
+        <link rel="stylesheet" href="C:\Users\Windows10\Downloads\public\result.css">
+        <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Search button -->
+        <link rel="icon" href="https://i.imgur.com/5eVtkqu.png"> <!-- Change the icon of the webpage -->
+        <title>Search</title>
+        <style>
+            #refresh{ 
+                width: 700px;
+                height: 50px;
+                font-size: large;
+                color: rgb(70, 24, 45); 
+                margin-bottom : 20px; 
+            }
+        </style>
+    </head>
+    <body style="background-color: #9bd5d0;">
+        <nav class="navbar"> <!-- Navigation bar for switching to another page by clicking on it -->
+            <img src="https://i.imgur.com/5eVtkqu.png" alt="logo" width="100" height="100"> 
+            <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="LoginPage.html">Log-in</a></li>
+                <li><a class="active" href="Categories.html">Categories</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="Search.html">Search</a></li>
+            </ul>
+        </nav> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <!-- Input box for users to enter some information -->
+        <div class="searchbox">
+            <form action="/search"> 
+                <select value="searchtype" id="searchtypes">
+                        <!-- Select option is involved with searching method whether the user would like to search for a product name, category, both of them, or return all products in this store -->
+                        <option value="" selected>Select option here</option>
+                        <option value="all">All</option>
+                        <option value="product">Product</option> 
+                        <option value="category">Category</option>
+                        <option value="category/product">Category&Product</option>
+                    </select>
+                <input name='searchval' type="text" id="searchKey" placeholder="Search for your desired product or category"/> <!-- Search box -->
+                <button id="searchBtn"><i class="fa fa-search"></i></button>
+            </form> 
+        </div> 
+        <button type="button" id='refresh' onclick="window.location.reload()"><b>Press here to clear the results before you search another product!</b></button> <!-- Refresh button -->
+        <div class="productrow"> 
+            <template id='productlist'>
+            <div class='row'>
+                <div > &nbsp </div>
+                <div id="productname"> </div>
+                <div id="category"> </div>
+                <div id="details"> </div>
+                <div id="price"> </div>
+            </div>
+            </template>
+        </div>
+        <script src="gindeeService.js" type="text/javascript" defer></script>    
+    </body>
+    <footer>
+        <a href="AboutUs.html">About Us</a>
+    </footer>
+</html>
